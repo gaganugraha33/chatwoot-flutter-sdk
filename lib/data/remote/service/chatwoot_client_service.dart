@@ -58,7 +58,7 @@ class ChatwootClientServiceImpl extends ChatwootClientService {
             createResponse.statusMessage ?? "unknown error",
             ChatwootClientExceptionType.SEND_MESSAGE_FAILED);
       }
-    } on DioException catch (e) {
+    } on DioError catch (e) {
       throw ChatwootClientException(e.message ?? "Error",
           ChatwootClientExceptionType.SEND_MESSAGE_FAILED);
     }
@@ -79,7 +79,7 @@ class ChatwootClientServiceImpl extends ChatwootClientService {
             createResponse.statusMessage ?? "unknown error",
             ChatwootClientExceptionType.GET_MESSAGES_FAILED);
       }
-    } on DioException catch (e) {
+    } on DioError catch (e) {
       throw ChatwootClientException(e.message ?? "Error",
           ChatwootClientExceptionType.GET_MESSAGES_FAILED);
     }
@@ -98,7 +98,7 @@ class ChatwootClientServiceImpl extends ChatwootClientService {
             createResponse.statusMessage ?? "unknown error",
             ChatwootClientExceptionType.GET_CONTACT_FAILED);
       }
-    } on DioException catch (e) {
+    } on DioError catch (e) {
       throw ChatwootClientException(
           e.message ?? "Error", ChatwootClientExceptionType.GET_CONTACT_FAILED);
     }
@@ -119,7 +119,7 @@ class ChatwootClientServiceImpl extends ChatwootClientService {
             createResponse.statusMessage ?? "unknown error",
             ChatwootClientExceptionType.GET_CONVERSATION_FAILED);
       }
-    } on DioException catch (e) {
+    } on DioError catch (e) {
       throw ChatwootClientException(e.message ?? "Error",
           ChatwootClientExceptionType.GET_CONVERSATION_FAILED);
     }
@@ -139,7 +139,7 @@ class ChatwootClientServiceImpl extends ChatwootClientService {
             updateResponse.statusMessage ?? "unknown error",
             ChatwootClientExceptionType.UPDATE_CONTACT_FAILED);
       }
-    } on DioException catch (e) {
+    } on DioError catch (e) {
       throw ChatwootClientException(e.message ?? "Error",
           ChatwootClientExceptionType.UPDATE_CONTACT_FAILED);
     }
@@ -160,7 +160,7 @@ class ChatwootClientServiceImpl extends ChatwootClientService {
             updateResponse.statusMessage ?? "unknown error",
             ChatwootClientExceptionType.UPDATE_MESSAGE_FAILED);
       }
-    } on DioException catch (e) {
+    } on DioError catch (e) {
       throw ChatwootClientException(e.message ?? "Error",
           ChatwootClientExceptionType.UPDATE_MESSAGE_FAILED);
     }
