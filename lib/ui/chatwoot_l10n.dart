@@ -29,6 +29,8 @@ class ChatwootL10n extends ChatL10n {
   /// Message when agent resolves conversation
   final String conversationResolvedMessage;
 
+  final String unreadMessagesLabel;
+
   /// Creates a new chatwoot l10n
   const ChatwootL10n(
       {this.attachmentButtonAccessibilityLabel = "",
@@ -40,12 +42,15 @@ class ChatwootL10n extends ChatL10n {
       this.inputPlaceholder = "Type your message",
       this.sendButtonAccessibilityLabel = "Send Message",
       this.conversationResolvedMessage =
-          "Your ticket has been marked as resolved"})
+          "Your ticket has been marked as resolved",
+      this.unreadMessagesLabel = ''})
       : super(
-            attachmentButtonAccessibilityLabel:
-                attachmentButtonAccessibilityLabel,
-            emptyChatPlaceholder: emptyChatPlaceholder,
-            fileButtonAccessibilityLabel: fileButtonAccessibilityLabel,
-            inputPlaceholder: inputPlaceholder,
-            sendButtonAccessibilityLabel: sendButtonAccessibilityLabel);
+          attachmentButtonAccessibilityLabel:
+              attachmentButtonAccessibilityLabel,
+          emptyChatPlaceholder: emptyChatPlaceholder,
+          fileButtonAccessibilityLabel: fileButtonAccessibilityLabel,
+          inputPlaceholder: inputPlaceholder,
+          sendButtonAccessibilityLabel: sendButtonAccessibilityLabel,
+          unreadMessagesLabel: unreadMessagesLabel,
+        );
 }
