@@ -446,7 +446,7 @@ class _ChatwootChatState extends State<ChatwootChat> {
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(
-                    "Powered by Chatwoot",
+                    "Powered by Sapawarga",
                     style: TextStyle(color: Colors.black45, fontSize: 12),
                   ),
                 )
